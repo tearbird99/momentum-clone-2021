@@ -1,12 +1,14 @@
-const mon = "mon";
-const tue = "tue";
-const wed = "wed";
-const thu = "thu";
-const fri = "fri";
-const sat = "sat";
+const player = {
+  name: "eugene",
+  points: 10,
+  fat: false,
+};
+console.log(player);
+console.log(player.name);
+console.log(player["name"]);
 
-const daysOfWeek = [mon, tue, wed, thu, fri, sat];
-console.log(daysOfWeek[1]);
-daysOfWeek.push("sun");
+player.point = 100; //Okay
+player = {}; //Error(const)
 
-const nonsense = [1, 2, "hello", false, null, true, undefined];
+player.lastName = "seo";
+player.points = player.points + 15;
