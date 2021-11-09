@@ -1,14 +1,19 @@
-function plus(a, b) {
-  console.log(a + b);
-}
-plus(8, 60);
-
-const player = {
-  name: "eugene",
-  sayHello: function (otherPersonsName) {
-    console.log("hello " + otherPersonsName);
+const calculator = {
+  plus: function (a, b) {
+    console.log(a + b);
+  },
+  minus: function (a, b) {
+    console.log(a - b);
+  },
+  divide: function (a, b) {
+    console.log(a / b);
+  },
+  invol: function (a, b) {
+    console.log(a ** b);
   },
 };
 
-console.log(player.name);
-player.sayHello("eugene");
+calculator.plus(2, 3);
+calculator.minus(5, 1);
+calculator.divide(9, 2);
+calculator.invol(8, 3);
