@@ -1,2 +1,7 @@
 const title = document.querySelector(".hello h1");
-console.log(title);
+
+function handleTitleClick() {
+  console.log("title was clicked!");
+}
+
+title.addEventListener("click", handleTitleClick);
