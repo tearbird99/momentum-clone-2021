@@ -1,3 +1,100 @@
+body {
+  height: 90vh;
+  font-family: "Arial", sans-serif;
+  color: white;
+  padding: 12px;
+}
+
+#greeting-box,
+#login-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#login-box img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 180px;
+}
+#login-form input {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  border-bottom: 2.5px solid white;
+  font-size: 38px;
+  color: white;
+  width: 525px;
+  text-align: center;
+}
+
+#name-question {
+  font-size: 48px;
+  margin-bottom: 24px;
+}
+
+#status-bar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 160px;
+}
+#status-bar #link span {
+  margin-right: 12px;
+}
+
+#weather {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+#weather #weather-status span {
+  font-size: 26px;
+}
+#weather #weather-status i {
+  font-size: 20px;
+  margin-left: 10px;
+}
+#weather #city {
+  font-size: 14px;
+}
+
+#clock {
+  font-size: 160px;
+  margin-bottom: -8px;
+}
+#greeting {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+#todo-question {
+  font-size: 36px;
+  margin-bottom: 6px;
+}
+#todo-form input {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  border-bottom: 2px solid white;
+  font-size: 38px;
+  color: white;
+  width: 550px;
+  text-align: center;
+}
+#todo-form input:focus {
+  outline: none;
+}
+
+#quote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: 16px;
+}
+#quote span:first-child {
+  font-size: 20px;
+}
+
 .hidden {
-  display: none;
+  display: none !important;
 }

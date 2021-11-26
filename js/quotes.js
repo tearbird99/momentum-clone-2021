@@ -42,10 +42,8 @@ const quotes = [
   },
 ];
 
-const quote = document.querySelector("#quote span:first-child");
-const book = document.querySelector("#quote span:last-child");
+const quote = document.querySelector("#quote span");
 
 const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)];
 
-quote.innerText = todaysQuote.quote;
-book.innerText = todaysQuote.book;
+quote.innerText = `"${todaysQuote.quote}"`;
