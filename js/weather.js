@@ -16,7 +16,7 @@ function onGeoOk(position) {
         icon.classList.add("fa-sun");
       } else if (status === "Clouds") {
         icon.classList.add("fa-cloud");
-      } else if (status === "Rain" || status == "Drizzle") {
+      } else if (status === "Rain" || status === "Drizzle") {
         icon.classList.add("fa-cloud-showers-heavy");
       } else if (status === "Snow") {
         icon.classList.add("fa-snowflake");
